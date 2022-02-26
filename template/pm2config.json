@@ -1,0 +1,14 @@
+{
+  "apps" : [{
+    "name": "<$ name $>",
+    "script": "./bin/cluster.js",
+    "env_production" : {
+      "NODE_ENV": "production"
+    },
+    "env_pre" : {
+      "NODE_ENV": "pre"
+    },
+    "error_file": "/<$ name $>/log/err.log",
+    "merge_logs": false
+  }]
+}
