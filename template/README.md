@@ -22,13 +22,14 @@ npm run prod
 正式集群 npm run pmprod  端口默认3000
 预发集群 npm run pmpre 端口默认8011
 
-
+{% if unitTest %}
 # unit test 由于使用了mocha 8，所以单测要求node版本>10.12.0
 npm run test
 
 # 单测覆盖率
 npm run cover
 然后在coverage文件夹里的index.html查看详情
+{% endif %}
 
 
 ```

@@ -3,8 +3,8 @@
  */
 
 module.exports = {
-    instance: 2, //根据实际cpu核数来确定
-    port: 8011,
+    instance: 4, //根据实际cpu核数来确定
+    port: 3000,
 {% if redis %}
     redis_options: {
       cluster: false,

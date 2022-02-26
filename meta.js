@@ -43,7 +43,6 @@ module.exports = {
     '.lintstagedrc': 'eslint',
     'test/**/*': 'unitTest',
     '**/*.ts': 'tsSupport',
-    'test/**/*': 'needUnitTest',
     'src/db/mysql.js': 'mysql',
     'src/controller/cats/*': 'mysql',
     'src/model/*': 'mysql',
