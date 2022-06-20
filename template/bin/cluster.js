@@ -4,15 +4,7 @@
 const cluster = require('cluster')
 const path = require('path')
 const config = require('../src/config')
-const logger = require('viper-log')
-
-logger.setOptions({
-    env: process.env.NODE_ENV,
-    logToConsole: config.logToConsole,
-    applog: {
-        fileName: config.applogFileName,
-    },
-})
+const logger = require('../src/common/util/logger')
 
 cluster.setupMaster({
     exec: path.join(__dirname, 'worker.js'),

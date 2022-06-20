@@ -1,24 +1,15 @@
 const Koa = require('koa')
 const bodyParser = require('koa-bodyparser')
 
-const logger = require('viper-log')
+const logger = require('./common/util/logger')
 const conditional = require('koa-conditional-get')
 const etag = require('koa-etag')
 const middleware = require('./common/middleware')
 const router = require('./router/router')
-const config = require('./config')
 
 const app = new Koa()
 
 app.use(bodyParser())
-
-logger.setOptions({
-    env: process.env.NODE_ENV,
-    logToConsole: config.logToConsole,
-    applog: {
-        fileName: config.applogFileName,
-    },
-})
 
 app.use(
     logger.initLogKoa({

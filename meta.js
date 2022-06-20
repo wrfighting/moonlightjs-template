@@ -42,7 +42,6 @@ module.exports = {
     '.prettierrc': 'eslint',
     '.lintstagedrc': 'eslint',
     'test/**/*': 'unitTest',
-    '**/*.ts': 'tsSupport',
     'src/db/mysql.js': 'mysql',
     'src/controller/cats/*': 'mysql',
     'src/model/*': 'mysql',

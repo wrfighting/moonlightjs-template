@@ -9,8 +9,8 @@ nunjucks参考文档：https://nunjucks.bootcss.com/templating.html
 开发完成后可通过此命令本地验证：
 
 ```bash
-moonlightjs init --offline {absoulte path to project} moonlightjsdemo
+moonlightjs-cli init --offline {absoulte path to project} moonlightjsdemo
 
 # example
-moonlightjs init --offline /Users/xxxx/Desktop/opensource/moonlightjs-template moonlightjstemplatedemo
+moonlightjs-cli init --offline /Users/xxxx/Desktop/opensource/moonlightjs-template moonlightjstemplatedemo
 ```
